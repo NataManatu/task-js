@@ -19,4 +19,20 @@ button.onclick = () => {
         alert("не пройдешь")
     }
     input.value = ""
+
+    switch (num) {
+        case 15:
+            alert("qq")
+            break;
+        case 16:
+            alert("ww")
+            break;
+        case 17:
+            alert("ee")
+            break;
+        default:
+           alert("ok")
+    }
 }
+
+
