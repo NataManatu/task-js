@@ -1,3 +1,5 @@
+//ФУНКИИ
+
 /*  Создайте функцию sayError(), которая будет выводить (при помощи диалогового окна alert) сообщение 
  с текстом «Some error occurred!».*/
 
@@ -72,7 +74,9 @@ checkPassword('JS')
 checkPassword('JavaScript') */
 
 
-//Задача № 5
+/* Создайте функцию определения знака числа sign(x),
+которая вернет значение –1, если аргумент «х» — отрицательное число, 1 — если положительное, 0 —
+если аргумент «х» равен нулю */
 
 function sign(x) {
 
@@ -110,3 +114,44 @@ console.log(sign(-0))
 // else {
 //   return NaN;
 // }
+
+
+/*  Предложите имя (согласно правилам именования)
+и создайте функцию, которая будет возвращать названия дней недели по их номеру: 0-Sunday, 1-Monday,
+2-Tuesday, 3-Wednesday, 4-Thursday, 5-Friday, 6-Saturday */
+
+// function weekDays(week){
+//   if(week==0){
+//     console.log("Sunday")
+//   }
+//   else if(week==1){
+//     console.log("Monday")
+//   }
+//   else if(week==2){
+//     console.log("Tuesday")
+//   }
+//   else if(week==3){
+//     console.log("Wednesday")
+//   }
+//   else if(week==4){
+//     console.log("Thursday")
+//   }
+//   else if(week==5){
+//     console.log("Friday")
+//   }
+//   else if(week==6){
+//     console.log("Saturday")
+//   }
+//   else{
+//     console.log("ты не на той планете")
+//   }
+
+// }
+// weekDays(0)
+// weekDays(1)
+// weekDays(2)
+// weekDays(3)
+// weekDays(4)
+// weekDays(5)
+// weekDays(6)
+// weekDays(7)
