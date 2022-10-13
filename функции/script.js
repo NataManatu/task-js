@@ -25,20 +25,27 @@
 // Создайте функцию createHeaders(N), которая создаст
 // на странице N заголовков второго уровня (<h2>) с надписями Header1, Header2 … HeaderN
 
-/* let headers = document.querySelector("#headers")
-function createHeaders(N) {
-  let h1 = document.createElement("h1")
-  h1.innerHTML = `<h1> ${N} </h1>`
-  headers.appendChild(h1)
+// let headers = document.querySelector("#headers")
+// function createHeaders(N) {
+//   let h1 = document.createElement("h1")
+//   h1.innerHTML = `<h1> ${N} </h1>`
+//   headers.appendChild(h1)
+// }
+// createHeaders("Header1")
+// createHeaders("Header2")
+// createHeaders("HeaderN")
+
+//решение 2
+/* function createHeaders(N) {
+  document.write("<h1>" + N + "</h1>")
 }
 createHeaders("Header1")
 createHeaders("Header2")
 createHeaders("HeaderN") */
 
-
-// Создайте функцию checkPassword(x), которая вернет 
-// значение true, если в качестве аргумента в нее будет 
-// передан допустимый пароль (одно из значений «Step», 
+// Создайте функцию checkPassword(x), которая вернет
+// значение true, если в качестве аргумента в нее будет
+// передан допустимый пароль (одно из значений «Step»,
 // «Web» или «JavaScript»). Иначе функция должна вернуть false.
 
 /* function checkPassword(x) {
@@ -47,7 +54,7 @@ createHeaders("HeaderN") */
         console.log(x, true)
     } else {
         console.log(x, false)
-    }   
+    }
 }
 checkPassword('sfdsf')
 checkPassword('Step')
@@ -78,27 +85,27 @@ checkPassword('JavaScript') */
 которая вернет значение –1, если аргумент «х» — отрицательное число, 1 — если положительное, 0 —
 если аргумент «х» равен нулю */
 
-function sign(x) {
+// function sign(x) {
 
-  if (x > 0) {
-    return 1;
-  }
-  if (x < 0) {
-    return -1;
-  }
-  if (x == 0) {
-    return 0
-  }
-  else {
-    return NaN;
-  }
+//   if (x > 0) {
+//     return 1;
+//   }
+//   if (x < 0) {
+//     return -1;
+//   }
+//   if (x == 0) {
+//     return 0
+//   }
+//   else {
+//     return NaN;
+//   }
 
-}
+// }
 
-console.log(sign(100))
-console.log(sign(-100))
-console.log(sign(0))
-console.log(sign(-0))
+// console.log(sign(100))
+// console.log(sign(-100))
+// console.log(sign(0))
+// console.log(sign(-0))
 
 //решение 2
 
