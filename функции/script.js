@@ -162,3 +162,4 @@ checkPassword('JavaScript') */
 // weekDays(5)
 // weekDays(6)
 // weekDays(7)
+

@@ -222,7 +222,7 @@ const num = +prompt("Введите число");
 let i = 0
 while (i < num) {
     i++
-    res = num / num
-    console.log(res);
-
+    if (num % i == 0) {
+        console.log(i);
+    }
 }
