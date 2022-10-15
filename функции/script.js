@@ -127,7 +127,7 @@ checkPassword('JavaScript') */
 и создайте функцию, которая будет возвращать названия дней недели по их номеру: 0-Sunday, 1-Monday,
 2-Tuesday, 3-Wednesday, 4-Thursday, 5-Friday, 6-Saturday */
 
-// function weekDays(week){
+// function getDayOfWeek(week){
 //   if(week==0){
 //     console.log("Sunday")
 //   }
