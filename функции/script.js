@@ -1,6 +1,42 @@
 //ФУНКИИ
 
-/*  Создайте функцию sayError(), которая будет выводить (при помощи диалогового окна alert) сообщение 
+
+
+/* Рассмотрим в качестве примера функцию, создающую 5 однотипных блоков-заголовков (<h2></h2>)
+с надписями Header 1 … Header 5
+ */
+
+// function show5Blocks() {
+//   for (i = 1; i <= 5; i++)
+//     document.write("<h2> Header " + i +
+//       "</h2>");
+// }
+// show5Blocks();
+
+
+// function incAndLog(x) {
+//   x = x + 1;
+//   alert("inc x = " + x);
+//   Log.innerHTML += "<br>inc x = " + x;
+// }
+// x = 2;
+// incAndLog(x);//вопрос почему без объявления переменной
+
+function incAndLog(x) {
+  x = x+1;
+  alert("inc x = " + x);
+  Log.innerHTML += "<br>inc x = " + x;
+  }
+  x = 2;
+  Log.innerHTML = "x = " + x;
+  incAndLog(x);
+  Log.innerHTML = "<br>x = " + x;//страница 17
+
+
+
+
+
+/*  Создайте функцию sayError(), которая будет выводить (при помощи диалогового окна alert) сообщение
  с текстом «Some error occurred!».*/
 
 // function sayError() {
@@ -9,9 +45,9 @@
 // sayError()
 
 
-//  Создайте функцию showError(x), которая будет выводить (при помощи диалогового окна alert) сообщение 
-//  с текстом «Error X occurred!», где Х — текст из аргумента функции (например, вызов showError(‘Out of 
-// memory’) должен вывести сообщение «Error Out of 
+//  Создайте функцию showError(x), которая будет выводить (при помощи диалогового окна alert) сообщение
+//  с текстом «Error X occurred!», где Х — текст из аргумента функции (например, вызов showError(‘Out of
+// memory’) должен вывести сообщение «Error Out of
 //  memory occurred!»).
 
 // function showError(x,y) {
