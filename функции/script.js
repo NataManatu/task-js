@@ -22,15 +22,27 @@
 // x = 2;
 // incAndLog(x);//вопрос почему без объявления переменной
 
-function incAndLog(x) {
-  x = x+1;
-  alert("inc x = " + x);
-  Log.innerHTML += "<br>inc x = " + x;
-  }
-  x = 2;
-  Log.innerHTML = "x = " + x;
-  incAndLog(x);
-  Log.innerHTML = "<br>x = " + x;//страница 17
+
+// function incAndLog(x) {
+//   x = x+1;
+//   alert("inc x = " + x);
+//   Log.innerHTML += "<br>inc x = " + x;
+//   }
+//   x = 2;
+//   Log.innerHTML = "x = " + x;
+//   incAndLog(x);
+//   Log.innerHTML = "<br>x = " + x;//страница 17
+
+
+// function bankerRound(x) {
+//   if (Math.round(x) % 2 == 0)
+//     return Math.round(x);
+//   else {
+//     if (x < Math.round(x))
+//       return Math.round(x) - 1;
+//     else return Math.round(x) + 1;
+//   }
+// }
 
 
 
@@ -72,12 +84,14 @@ function incAndLog(x) {
 // createHeaders("HeaderN")
 
 //решение 2
-/* function createHeaders(N) {
-  document.write("<h1>" + N + "</h1>")
-}
-createHeaders("Header1")
-createHeaders("Header2")
-createHeaders("HeaderN") */
+// function createHeaders(N) {
+//   for (i = 1; i <= 5; i++)
+//   document.write("<h1>" + N + "</h1>")
+    
+// }
+// createHeaders("Header1")
+// createHeaders("Header2")
+// createHeaders("HeaderN") 
 
 // Создайте функцию checkPassword(x), которая вернет
 // значение true, если в качестве аргумента в нее будет
