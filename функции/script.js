@@ -1,4 +1,4 @@
-//ФУНКИИ
+//ФУНКЦИИ
 
 
 
@@ -31,7 +31,19 @@
 //   x = 2;
 //   Log.innerHTML = "x = " + x;
 //   incAndLog(x);
-//   Log.innerHTML = "<br>x = " + x;//страница 17
+//   Log.innerHTML = "<br>x = " + x;//страница 17 функции
+
+
+// function logArguments(){
+//   for(i=0; i<arguments.length; i++){
+//     console.log("argument"+(i+1)+"="+"arguments[i]")
+// }
+//  }
+
+//  logArguments(1,2,3)
+//  logArguments("text")//непонятная запись стр 6 подробнее о функциях
+
+
 
 
 // function bankerRound(x) {
@@ -47,7 +59,7 @@
 
 
 
-
+//ЗАДАЧИ
 /*  Создайте функцию sayError(), которая будет выводить (при помощи диалогового окна alert) сообщение
  с текстом «Some error occurred!».*/
 
@@ -211,5 +223,18 @@ checkPassword('JavaScript') */
 // weekDays(4)
 // weekDays(5)
 // weekDays(6)
-// weekDays(7)
+// weekDays(7)//можно через swith
 
+//ЗАДАЧИ-ПОДРОБНЕЕ О ФУНКЦИЯХ
+
+
+/* 1. Создайте функцию stringFrom(…), возвращающую
+строку, состоящую из значений всех переданных
+аргументов. Например, вызов stringFrom('I have',
+5, 'apples') вернет строку «I have 5 apples»; вызов
+stringFrom('Х value is', true) вернет строку «Х value
+is true». */
+
+function stringForm() {
+  
+}
