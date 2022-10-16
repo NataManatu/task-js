@@ -99,7 +99,7 @@
 // function createHeaders(N) {
 //   for (i = 1; i <= 5; i++)
 //   document.write("<h1>" + N + "</h1>")
-    
+
 // }
 // createHeaders("Header1")
 // createHeaders("Header2")
@@ -225,6 +225,8 @@ checkPassword('JavaScript') */
 // weekDays(6)
 // weekDays(7)//можно через swith
 
+
+
 //ЗАДАЧИ-ПОДРОБНЕЕ О ФУНКЦИЯХ
 
 
@@ -235,6 +237,22 @@ checkPassword('JavaScript') */
 stringFrom('Х value is', true) вернет строку «Х value
 is true». */
 
-function stringForm() {
-  
-}
+// function stringForm(a, b, c) {
+//   text.innerText = (a + " " + b + " " + c)
+// }
+// stringForm("I have", 5, "apples")
+// stringForm('Х value is', true)
+
+
+
+/* 2. Создайте функцию, возвращающую значение минимального из всех переданных аргументов. */
+// function min() {
+//     if (arguments.length == 0) return undefined;
+//     ret = arguments[0];
+//     for (i = 1; i < arguments.length; i++)
+//       if (arguments[i] < ret)
+//         ret = arguments[i];
+//     return ret;
+//   }
+
+// console.log(min(1, 2, 3, 4, 5, 6, 7, 8, 9)) 
