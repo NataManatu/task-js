@@ -56,9 +56,10 @@
 // }
 
 let interval = document.querySelector(".interval")
-let counter = 0
-setInterval(function () {
-    interval.style.display = "none"
-},
-    2000)
-clearInterval(interval)
+// let counter = 0
+// setTimeout(function () {
+//     interval.style.display = "none"
+// },
+//     2000)
+
+
