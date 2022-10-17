@@ -1,0 +1,14 @@
+* {
+    margin: 0 auto;
+    background-color: burlywood;
+    text-align: center;
+ 
+}
+
+.interval {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    padding: 30px;
+    color: lightblue;
+}

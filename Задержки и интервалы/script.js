@@ -33,3 +33,32 @@
 // }, 3000);
 
 // clearTimeout(id);
+
+//SETINTERVAL
+
+// setInterval(
+//     function(){
+//     alert("Boom!");
+//     },
+//     2000);
+
+/* Теперь добавим вызов clearInterval. */
+
+// var id = setInterval(IntervalFunc, 2000);
+// var counter = 0;
+// function IntervalFunc() {
+//     if (counter == 3) {
+//         clearInterval(id);
+//         return;
+//     }
+//     counter++;
+//     alert("Boom");
+// }
+
+let interval = document.querySelector(".interval")
+let counter = 0
+setInterval(function () {
+    interval.style.display = "none"
+},
+    2000)
+clearInterval(interval)
