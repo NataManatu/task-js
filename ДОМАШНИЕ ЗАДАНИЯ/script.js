@@ -7,8 +7,23 @@ is the question...» так, чтобы буквы появлялись по о�
 Shakespeare, from "Hamlet"» (видео 1). Если видео не работает, посмотреть, как это выглядит, можно в файле
 hamlet.gif (файл прикреплен к данному pdf-файлу). */
 
-function text() {
-    let txt1 = document.write("<h5> To be, or not to be, that is the question </h5>")
+let str = " To be, or not to be, that is the question"
+let str2 = "<br>William Shakespeare, from 'Hamlet'"
+
+for (let i = 0; i < str.length; i++) {
+    setTimeout(function () {
+        let element = str[i];
+        document.write(element)
+    }, 3000)
+
 }
-setTimeout(text, 2000)
+for (let i = 0; i < str2.length; i++) {
+    setTimeout(function () {
+        let element = str2[i];
+        document.write(element)
+    }, 4000)
+
+}
+
+
 

@@ -244,14 +244,16 @@ N, включая число 1 (примеры: ввод N=10, вывод 1, 2,
 /* 4. Напишите скрипт, который принимает от пользователя величину годовой депозитной ставки (в процентах) и выводит количество лет, по прошествии
 которых вклад увеличится вдвое. */
 
+
+// let money = 1
 // const yearDepozit = +prompt("введите величину годовой ставки (проценты)");
-// const i = 0;
-// while(i< yearDepozit){
-// const  = *yearDepozit// выводим из процента
-    
-//     i++ 
-//     console.log(`Через ${} лет ваш вклад увеличится вдвое`)
-//    }
+// const yDPercent = yearDepozit/100
+// let i = 0;
+// while(money<2){
+//   money += money*yDPercent// выводим из процента
+//   i++
+// }
+// console.log(`Через ${i} лет ваш вклад увеличится вдвое`)
 
 
 
@@ -275,15 +277,15 @@ N, включая число 1 (примеры: ввод N=10, вывод 1, 2,
 
 // let totalWaterVolume = prompt("Введите первоначальный объем воды");
 
+// let totalWaterVolume = prompt("Введите первоначальный объем воды");
+
 // i = 10
 // while (i < totalWaterVolume) {
-//     const leakingWater = totalWaterVolume * 0.1; // процент вытекшей воды  0.1 = 10%
-//     const remainsWater = totalWaterVolume - leakingWater; //   общий остаток 
-//     // console.log(sumWater);
-//     // const residueWater = sumWater * 0.1;// ежедневно
-//     i++
-//    console.log(`вам хватит на ${remainsWater} дней`);
-   
+//   const leakingWater = totalWaterVolume * 0.1; // процент вытекшей воды  0.1 = 10%
+//   totalWaterVolume -= leakingWater; //   общий остаток 
+//   i++
+
 // }
+// console.log(`вам хватит на ${i} дней`);
 
 
