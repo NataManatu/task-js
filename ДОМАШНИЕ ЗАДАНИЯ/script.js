@@ -35,7 +35,7 @@ hamlet.gif (файл прикреплен к данному pdf-файлу). */
 
 
 today = new Date()
-newYear = new Date("December 31, 2022")
+newYear = new Date("January 1, 2023")
 getDays = Math.round((newYear - today) / 24 / 60 / 60 / 1000);
 getHours = Math.round((newYear - today) / 60 / 60 / 1000);
 getMin = Math.round((newYear - today) / 60 / 1000);
