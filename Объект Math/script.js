@@ -26,3 +26,10 @@ alert(res);
 res = Math.floor(4.5);
 // 4
 alert(res);
+
+var res = Math.min(1,4,-1,-9,20);
+// -9
+alert(res);
+res = Math.max(21,3,4,5,6,7);
+// 21
+alert(res);

@@ -1,1 +1,24 @@
+p {
+    color: rgb(238, 68, 93);
+    font-size: 20px;
+    margin-top: 20px;
+   font-weight: 600;
+}
 
+span {
+    background-color: rgb(7, 193, 255);
+    color: white;
+    padding: 8px;
+    margin-right: 5px;
+
+   
+    
+}
+#span{
+    background-color: rgb(212, 212, 212);
+    color: black;
+    padding: 6px;
+    font-size: 14px;
+    margin-right: 12px;
+    
+}
