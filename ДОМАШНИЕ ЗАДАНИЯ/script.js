@@ -32,12 +32,33 @@ hamlet.gif (файл прикреплен к данному pdf-файлу). */
 относительно текущей даты с помощью методов объекта Date.  */
 
 
-today = new Date()
-newYear = new Date("January 1, 2023")
-// getDays = Math.round((newYear - today) / 24 / 60 / 60 / 1000);
-// getHours = Math.round((newYear - today) / 60 / 60 / 1000);
-// getMin = Math.round((newYear - today) / 60 / 1000);
-getSecond = Math.round((newYear - today) / 1000);
-// console.log(getHours)
-// console.log(getSecond)
-document.write(`<p>До Нового года осталось</p><br> <span>${Math.floor(getSecond/24/60/60%365)}</span>  <span>${Math.floor(getSecond/60/60%24)}</span>  <span>${Math.floor(getSecond/60%60)}</span>  <span>${Math.floor(getSecond%60)}</span><br><br> <span id="span">дня</span> <span id="span">часа</span> <span id="span">минут</span> <span id="span">секунд</span> `) 
+// today = new Date()
+// newYear = new Date("January 1, 2023")
+// // getDays = Math.round((newYear - today) / 24 / 60 / 60 / 1000);
+// // getHours = Math.round((newYear - today) / 60 / 60 / 1000);
+// // getMin = Math.round((newYear - today) / 60 / 1000);
+// getSecond = Math.round((newYear - today) / 1000);
+// // console.log(getHours)
+// // console.log(getSecond)
+// document.write(`<p>До Нового года осталось</p><br> <span>${Math.floor(getSecond/24/60/60%365)}</span>  <span>${Math.floor(getSecond/60/60%24)}</span>  <span>${Math.floor(getSecond/60%60)}</span>  <span>${Math.floor(getSecond%60)}</span><br><br> <span id="span">дня</span> <span id="span">часа</span> <span id="span">минут</span> <span id="span">секунд</span> `) 
+
+
+//ЗАДАЧА-3
+
+
+let list = {
+    produkt5: "apple",
+    produkt3: "kiwi",
+    produkt4: "tomato",
+    produkt2: "potato",
+    produkt1: "plum",
+    produkt6: "lemon"
+}
+
+
+for (var i in list) {
+    document.write(`<br> ${list[i]}`);//перебор значений
+}
+
+// console.log( Object.keys(list).sort())//сортировка по ключю(имени)
+
