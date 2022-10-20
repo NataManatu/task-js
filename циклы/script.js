@@ -277,8 +277,6 @@ N, включая число 1 (примеры: ввод N=10, вывод 1, 2,
 
 // let totalWaterVolume = prompt("Введите первоначальный объем воды");
 
-// let totalWaterVolume = prompt("Введите первоначальный объем воды");
-
 // i = 10
 // while (i < totalWaterVolume) {
 //   const leakingWater = totalWaterVolume * 0.1; // процент вытекшей воды  0.1 = 10%
