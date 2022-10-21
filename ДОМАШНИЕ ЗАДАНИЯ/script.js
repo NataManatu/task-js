@@ -43,22 +43,85 @@ hamlet.gif (файл прикреплен к данному pdf-файлу). */
 // document.write(`<p>До Нового года осталось</p><br> <span>${Math.floor(getSecond/24/60/60%365)}</span>  <span>${Math.floor(getSecond/60/60%24)}</span>  <span>${Math.floor(getSecond/60%60)}</span>  <span>${Math.floor(getSecond%60)}</span><br><br> <span id="span">дня</span> <span id="span">часа</span> <span id="span">минут</span> <span id="span">секунд</span> `) 
 
 
-//ЗАДАЧА-3
 
+//Задание 3
 
-let list = {
-    produkt5: "apple",
-    produkt3: "kiwi",
-    produkt4: "tomato",
-    produkt2: "potato",
-    produkt1: "plum",
-    produkt6: "lemon"
-}
+// const list = {
+//     values: ["apple", "kiwi", "tomato", "potato", "plum", "lemon"],
+//     printList: function () {
+//         newList = this.values.sort(function (a, b) {
+//             if (a < b)
+//                 return -1
+//             if (a > b)
+//                 return 1
+//             return 0
+//         })
+//         for (let i in this.values) {
+//             document.write(`<br>${Number(i) + 1}. ${this.values[i]}`);//перебор значений
+//         }
+//     },
+//     add: function (item) {
+//         this.values.push(item)
+//     }
+// }
 
-
-for (var i in list) {
-    document.write(`<br> ${list[i]}`);//перебор значений
-}
-
+// list.printList()
+// list.add('carrot')
+// list.printList()
+// list.values = ['c++', 'js', 'ts', 'python']
+// list.printList()
 // console.log( Object.keys(list).sort())//сортировка по ключю(имени)
 
+
+//задание 4
+
+
+/* Создайте класс MyButton, который принимает 2 параметра в виде текста (text) и класса кнопки (btnClass).
+Опишите в нем метод show(), который выводит методом
+document.write() экземпляр кнопки в тело html-страницы. Предусмотрите геттер и сеттер, которые позволяют
+получить и изменить свойство value кнопки, которое на
+самом деле изменяет ее свойство text.
+Опишите в стилях для страницы несколько классов,
+которые позволят создать разные экземпляры кнопок.
+Выведите несколько кнопок методом show(), для одной из них поменяйте текст:
+
+Создайте класс ColorButton, который наследует класс
+MyButton, добавив в него дополнительный класс, который позволяет менять цвет фона и текста кнопки, добавляя к экземпляру ColorButton 
+помимо основного дополнительный класс. Например, экземпляр ColorButton
+будет вызываться с такими параметрами:
+let btnColor = new ColorButton("See more", "btn",
+ "btn-danger");
+Кнопка, выведенная с помощью метода show() будет
+иметь такой код:
+<button type="button" class="btn btn-danger">
+ See more
+</button> */
+
+class MyButton {
+    constructor(text, cssClass) {
+        this.text = text
+        this.cssClass = cssClass
+    }
+    show() {
+        document.write(`
+        <button type="button" class="${this.cssClass}">
+            ${this.text}    
+        </button>
+    `)
+    }
+    getVal() {
+        return this.text
+    }
+    setVal(t) {
+        this.text = t
+    }
+}
+
+b = new MyButton('save progress', 'btn_1')
+b.show()
+b.setVal('click me', 'btn_2')
+b.show()
+b.setVal('Download', 'btn_3')
+b.show()
+b.setVal('See more', 'btn_4')
+b.show()
