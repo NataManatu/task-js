@@ -33,21 +33,25 @@ span {
 .btn_2{
     width: 100px;
     height: 30px;
-    background-color: rgb(130, 130, 130);
+    background-color: rgb(225, 225, 225);
     color: rgb(37, 37, 37);
     border-radius: 5px; 
 }
 .btn_3{
     width: 80px;
     height: 30px;
-    background-color: rgb(130, 130, 130);
+    background-color: rgb(225, 225, 225);
     color: rgb(37, 37, 37);
     border-radius: 5px; 
 }
 .btn_4{
     width: 80px;
     height: 30px;
-    background-color: rgb(130, 130, 130);
-    color: rgb(247, 87, 87);
+    background-color: rgb(250, 207, 207);
+    color: rgb(104, 101, 101);
     border-radius: 5px; 
+}
+
+.danger {
+    background-color: rgb(255, 85, 85) !important;
 }

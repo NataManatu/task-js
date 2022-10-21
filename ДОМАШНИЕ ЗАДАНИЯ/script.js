@@ -112,16 +112,38 @@ class MyButton {
     getVal() {
         return this.text
     }
-    setVal(t) {
+    setVal(t,s) {
         this.text = t
+        this.cssClass = s
+
     }
 }
 
 b = new MyButton('save progress', 'btn_1')
 b.show()
 b.setVal('click me', 'btn_2')
+console.log(b.getVal())
 b.show()
 b.setVal('Download', 'btn_3')
 b.show()
 b.setVal('See more', 'btn_4')
 b.show()
+
+class ColorButton extends MyButton {
+    constructor(text, cssClass, colorClass) {
+        super(text, cssClass)
+        this.colorClass = colorClass
+    }
+    show() {
+        document.write(`
+        <button type="button" class="${this.cssClass} ${this.colorClass}">
+            ${this.text}    
+        </button>
+    `)
+    }
+}
+
+b = new ColorButton('save progress2', 'btn_1', 'danger')
+b.show()
+b1 = new ColorButton('save progress2', 'danger')
+b1.show()
