@@ -82,10 +82,10 @@
 стите последнюю цифру в начало (из числа 12345 должно
 получиться число 51234). */
 
-let number = prompt("Введите пятизначное число")
-let number_2 = number % 10
+// let number = prompt("Введите пятизначное число")
+// let number_2 = number % 10
 
-alert(number_2 + number)
+// alert(number_2 + number)
 
 
 
@@ -142,3 +142,25 @@ alert(number_2 + number)
 // else {
 //     alert("введите корректные данные")
 // }
+
+
+/* 3
+Запросить у пользователя число и вывести его модуль
+(|7| = 7, |-7| = 7). */
+
+// let number=prompt("Введите число")
+// alert(Math.abs(number) )
+
+
+/* 4 
+Запросить у пользователя время (часы, минуты, секунды)
+и проверить корректность введенных данных. */
+
+let hoursMin = prompt("Введите время формат (часы, минуты, секунды)")
+console.log(hoursMin)
+Data = new Date();
+Hour = Data.getHours();
+Minutes = Data.getMinutes();
+Seconds = Data.getSeconds();
+// Вывод
+document.write("Текущее время: " + Hour + ":" + Minutes);
