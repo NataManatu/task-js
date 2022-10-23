@@ -262,11 +262,37 @@
 /* 1
 Запросить 2 числа и вывести большее из них. */
 
-let number = +prompt("Введите число")
-let number_2 = +prompt("Введите второе число")
+// let number = +prompt("Введите число")
+// let number_2 = +prompt("Введите второе число")
 
-if (number > number_2) alert(number);
-else if (number_2 > number) alert(number_2);
-else alert('=');
+// if (number > number_2) alert(number);
+// else if (number_2 > number) alert(number_2);
+// else alert('=');
 
 
+/* 2
+Запросить 1 число и проверить, оно кратно 5 или нет. */
+
+// let number = +prompt("Введите число")
+
+// if (number % 5 == 0) {
+//     alert("кратно 5")
+// }
+// else{alert("не кратно 5")}
+
+
+/* 3
+Запросить у пользователя название планеты. Если поль-
+зователь ввел «Земля» или «земля», то вывести «Привет,
+землянин!», в остальных случаях вывести «Привет, ино-
+планетянин!». */
+
+
+let planet = prompt("введите название планеты")
+
+if (planet === "земля" || planet === "Земля") {
+    alert("Привет,землянин!")
+}
+else {
+    alert(" вы с другой планеты")
+}
