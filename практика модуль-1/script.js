@@ -435,16 +435,33 @@ write(). Для ввода данных используйте prompt() и confi
 Запросить число и проверить, простое ли оно. Простое
 число делится без остатка только на себя и на единицу. */
 
-let num1 = parseInt(prompt("введите число"))
+// let num1 = parseInt(prompt("введите число"))
 
-for (let i = 2; i <= num1; i++) {
-  for (let j = 2; j <= i; j++) {
-    if ((i % j == 0) && (j != i)) {
-      break;
+// for (let i = 2; i <= num1; i++) {
+//   for (let j = 2; j <= i; j++) {
+//     if ((i % j == 0) && (j != i)) {
+//       break;
+//     } else {
+//       console.log(i);
+//       break;
+//     }
+//   }
+// }
+
+
+
+//WEEK-4
+
+
+/* 1
+Написать функцию, которая принимает 2 числа и возвра-
+щает меньшее из них. */
+
+function num(a, b) {
+    if (a < b) {
+        return a;
     } else {
-      console.log(i);
-      break;
+        return b;
     }
-  }
 }
-
+console.log(num(10, 49))//выведет 10
