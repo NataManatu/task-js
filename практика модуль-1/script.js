@@ -165,22 +165,93 @@
 случаи попадания точки на оси X или Y или в начало
 координат. */
 
-let x = prompt("введите координаты точки X");
-let y = prompt("введите координаты точки Y");
+// let x = prompt("введите координаты точки X");
+// let y = prompt("введите координаты точки Y");
 
-if ((x > 0) && (y > 0))
-    console.log("I четверть");
-else {
-    if ((x < 0) && (y > 0))
-        console.log("II четверть");
-    else {
-        if ((x < 0) && (y < 0))
-            console.log("III четверть");
-        else {
-            if ((x > 0) && (y < 0))
-                console.log("IV четверть");
-            else
-                console.log("Точка лежит на оси");
-        }
-    }
+// if ((x > 0) && (y > 0))
+//     console.log("I четверть");
+// else {
+//     if ((x < 0) && (y > 0))
+//         console.log("II четверть");
+//     else {
+//         if ((x < 0) && (y < 0))
+//             console.log("III четверть");
+//         else {
+//             if ((x > 0) && (y < 0))
+//                 console.log("IV четверть");
+//             else
+//                 console.log("Точка лежит на оси");
+//         }
+//     }
+// }
+
+/* ■ Задания, в которых необходимо использовать SWITCH.
+1.Запросить у пользователя номер месяца и вывести на экран
+его название. */
+
+// let month = prompt("введите номер месяца")
+// switch (month) {
+//     case '1':
+//         document.write("январь")
+//         break;
+//     case '2':
+//         document.write("февраль")
+//         break;
+//     case '3':
+//         document.write("март")
+//         break;
+//     case '4':
+//         document.write("аперль")
+//         break;
+//     case '5':
+//         document.write("май")
+//         break;
+//     case '6':
+//         document.write("июнь")
+//         break;
+//     case '7':
+//         document.write("июль")
+//         break;
+//     case '8':
+//         document.write("август")
+//         break;
+//     case '9':
+//         document.write("сентябрь")
+//         break;
+//     case '10':
+//         document.write("октябрь")
+//         break;
+//     case '11':
+//         document.write("ноябрь")
+//         break;
+//     case '12':
+//         document.write("декабрь")
+//         break;
+//     default:
+//         document.write("введите число от 0-12")
+// }
+
+
+/* 2
+Реализовать калькулятор. Пользователь вводит 2 числа и
+знак (+ - * /). В зависимости от введенного знака решить
+пример и вывести результат. */
+
+let number = +prompt("Введите число")
+let number_2 = +prompt("Введите второе число")
+let operator = prompt("Введите оператор(+,-,/,*)")
+
+switch (operator) {
+    case "+":alert(number + number_2)
+        break;
+    case "-": alert(number - number_2)
+        break;
+    case "/": alert(number / number_2)
+        break;
+    case "*": alert(number * number_2)
+        break;
+
+    default:
+        alert("некорректные данные")
+        break;
 }
