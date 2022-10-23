@@ -237,21 +237,36 @@
 знак (+ - * /). В зависимости от введенного знака решить
 пример и вывести результат. */
 
+// let number = +prompt("Введите число")
+// let number_2 = +prompt("Введите второе число")
+// let operator = prompt("Введите оператор(+,-,/,*)")
+
+// switch (operator) {
+//     case "+":alert(number + number_2)
+//         break;
+//     case "-": alert(number - number_2)
+//         break;
+//     case "/": alert(number / number_2)
+//         break;
+//     case "*": alert(number * number_2)
+//         break;
+
+//     default:
+//         alert("некорректные данные")
+//         break;
+// }
+
+
+/* ■ Задания, в которых необходимо использовать тернарный
+оператор. */
+/* 1
+Запросить 2 числа и вывести большее из них. */
+
 let number = +prompt("Введите число")
 let number_2 = +prompt("Введите второе число")
-let operator = prompt("Введите оператор(+,-,/,*)")
 
-switch (operator) {
-    case "+":alert(number + number_2)
-        break;
-    case "-": alert(number - number_2)
-        break;
-    case "/": alert(number / number_2)
-        break;
-    case "*": alert(number * number_2)
-        break;
+if (number > number_2) alert(number);
+else if (number_2 > number) alert(number_2);
+else alert('=');
 
-    default:
-        alert("некорректные данные")
-        break;
-}
+
