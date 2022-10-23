@@ -457,11 +457,23 @@ write(). Для ввода данных используйте prompt() и confi
 Написать функцию, которая принимает 2 числа и возвра-
 щает меньшее из них. */
 
-function num(a, b) {
-    if (a < b) {
-        return a;
-    } else {
-        return b;
-    }
+// function num(a, b) {
+//     if (a < b) {
+//         return a;
+//     } else {
+//         return b;
+//     }
+// }
+// console.log(num(10, 49))//выведет 10
+
+
+
+/* 2
+Написать функцию, которая возводит переданное число
+в указанную степень. */
+function st(a, b) {
+   
+   return Math.pow(a, b)
 }
-console.log(num(10, 49))//выведет 10
+console.log(st(2, 3))
+
