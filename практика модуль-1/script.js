@@ -471,9 +471,24 @@ write(). Для ввода данных используйте prompt() и confi
 /* 2
 Написать функцию, которая возводит переданное число
 в указанную степень. */
-function st(a, b) {
-   
-   return Math.pow(a, b)
-}
-console.log(st(2, 3))
+// function st(a, b) {
 
+//    return Math.pow(a, b)
+// }
+// console.log(st(2, 3))
+
+
+
+/* 3
+Написать функцию, которая принимает 2 числа и знак
+(+ - * /), считает пример и возвращает результат. */
+
+function calc(a, b) {
+    return a + b;
+   
+  
+
+
+
+}
+console.log(calc(4, 5))
