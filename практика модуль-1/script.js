@@ -82,13 +82,12 @@
 стите последнюю цифру в начало (из числа 12345 должно
 получиться число 51234). */
 
-// let number = prompt("Введите пятизначное число")
-// let number_2 = number % 10
-
-// alert(number_2 + number)
-
-//не решила
-
+// let stringOfNumbers = prompt("Введите пятизначное число")
+// let numbers = Array.from(stringOfNumbers)
+// let elem5 = numbers[4]
+// numbers.pop()
+// numbers.unshift(elem5)
+// alert(numbers)
 
 
 /* 10 Зарплата работника составляет $250 + 10% от продаж.
@@ -494,9 +493,74 @@ write(). Для ввода данных используйте prompt() и confi
 Написать функцию, которая принимает 2 числа и знак
 (+ - * /), считает пример и возвращает результат. */
 
-function calc(a, b) {
-    return a + b;
-   
+// function calc(a, b) {
+//     return a + b;
+
+
+// }
+// console.log(calc(4, 5))
+
+//дорешать
+
+// function calck(a, b, c) {
+//   switch (c) {
+//     case '+':
+//       {
+//         console.log(a + b)
+//       }
+//       break;
+//     case '-':
+//       console.log(a - b)
+//       break;
+//     case '*':
+//       console.log(a * b)
+//       break;
+//     case '/':
+//       console.log(a / b)
+//       break;
+
+//   }
+// }
+// calck(2, 2, '+')
+// calck(10, 8, '-')
+// calck(10, 8, '*')
+// calck(10, 2, '/')
+
+/* 4
+Написать функцию, которая проверяет, является ли пере-
+данное ей число простым. */
+// function prost(num) {
+//   if (num % num == 0 && num % 1 == 0) {
+//     console.log('Простое')
+//   } else {
+//     console.log('не простое')
+//   }
+// }
+
+
+
+/* 5
+Написать функцию, которая принимает число и выводит
+таблицу умножения для этого числа. Вызовите функцию
+для всех чисел от 2 до 9 */
+
+// function multi(num) {
+//   for (let index = 2; index <= 9; index++) {
+//     let summ = num * index
+//     console.log(summ)
+//   }
+// }
+// multi(2)
+// prost(86)
+
+
+
+/* 6
+Написать функцию, которая реализует работу оператора %.
+Функция принимает 2 параметра и возвращает остаток от
+деления первого параметра на второй. В функции исполь-
+зовать только + - * /, оператор % не использовать. */
+
+function num(a,b){
   
 }
-console.log(calc(4, 5))
