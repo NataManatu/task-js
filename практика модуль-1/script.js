@@ -562,5 +562,6 @@ write(). Для ввода данных используйте prompt() и confi
 зовать только + - * /, оператор % не использовать. */
 
 function num(a,b){
-  
+  let ras= a/b
 }
+consol.log(num(4,2))
