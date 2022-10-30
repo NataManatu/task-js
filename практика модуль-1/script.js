@@ -573,22 +573,23 @@ write(). Для ввода данных используйте prompt() и confi
 /* 7
 Написать функцию, которая принимает от 1 до 5 чисел и
 возвращает их сумму. */
-function sum(){
-  if (arguments.length>5) {
-    return 'ne schiyu bolshe 5 chisel'
-  } else {
-    let sum = 0
-    for (let item of arguments) {
-      sum+=item
-    }
-    return sum
-  }
-}
-console.log(sum())
-console.log(sum(1,2,5))
-console.log(sum(2))
-console.log(sum(2,5,8,9,7))
-console.log(sum(2,5,8,9,7,9))
+
+// function sum() {
+//   if (arguments.length > 5) {
+//     return 'ne schiyu bolshe 5 chisel'
+//   } else {
+//     let sum = 0
+//     for (let item of arguments) {
+//       sum += item
+//     }
+//     return sum
+//   }
+// }
+// console.log(sum())
+// console.log(sum(1, 2, 5))
+// console.log(sum(2))
+// console.log(sum(2, 5, 8, 9, 7))
+// console.log(sum(2, 5, 8, 9, 7, 9))
 
 
 /* 8
@@ -596,6 +597,35 @@ console.log(sum(2,5,8,9,7,9))
 возвращает большее из них. */
 
 
+
+// function m() {
+//   if (arguments.length > 5) {
+//     return 'ne schiyu bolshe 5 chisel'
+//   }
+//   let max = 0;
+//   for (let item of arguments) {
+//     max < item
+//     return item
+//   }
+
+// }
+
+// console.log(m(3, 4, 1, 2, 6, 7));
+
+//среднее число
+
+// function average(...nums) {
+//   let total = 0;
+//   for(const num of nums) {
+//     total += num;
+//   }
+//   let avr = total / arguments.length;
+//   return avr;
+// }
+
+// console.log(average(2, 6));
+// console.log(average(2, 3, 3, 5, 7, 10));
+// console.log(average(7, 1432, 12, 13, 100));
 
 
 /* 9
@@ -605,9 +635,27 @@ console.log(sum(2,5,8,9,7,9))
 bool (true – четные, false – нечетные). */
 
 
+function isEven(number) {
+
+  if (number > 0) {
+    x = true;
+  } else if (number < 0) {
+    x = false;
+  }
+  else {
+    x = false
+  }
+  return x;
+
+}
+
+console.log(isEven(10));
+console.log(isEven(-4));
+console.log(isEven(2));
 
 
-/* 
+
+/*
 10 Написать функцию, которая принимает дату (день, месяц,
   год) и возвращает дату следующего дня в виде строки
   «дд.мм.гггг». Проверку на високосный год желательно
@@ -615,11 +663,11 @@ bool (true – четные, false – нечетные). */
 
 
 
-  // WEEK-5
+// WEEK-5
 
 
 
- /*  * Во всех заданиях обязательно использовать рекурсию.
+/*  * Во всех заданиях обязательно использовать рекурсию.
 1
 Написать функцию, которая вычисляет факториал задан-
 ного числа. */
@@ -648,3 +696,99 @@ bool (true – четные, false – нечетные). */
 Написать функцию, которая принимает число и выводит
 соответствующее количество вложенных пар круглых скобок.
 Например: число 4 – (((()))). */
+
+
+
+
+
+// DZ-M-01-WEEK-1
+
+
+
+
+
+/* Задание
+Запрашивать данные у пользователя необходимо с помощью
+prompt(), а выводить результат с помощью alert().
+1
+Запросите у пользователя его имя и выведите в ответ:
+«Привет, его имя!». */
+
+// let youName = document.getElementById("name");
+// let greeting = document.getElementById("greeting")
+
+// function hello() {
+//   let inpVal = youName.value
+//   greeting.innerText = (`hello ${inpVal}`)
+// }
+// youName.addEventListener("input", hello)
+
+
+/* 2
+Запросите у пользователя год его рождения, посчитайте,
+сколько ему лет и выведите результат. Текущий год укажите
+в коде как константу. */
+
+// let age = document.getElementById("name");
+// let youAge = document.getElementById("youAge")
+
+// function age1() {
+//   let inpVal = age.value
+//   let age2 = new Date().getFullYear()
+//   let age3 = age2 - inpVal
+//   youAge.innerText = (`You age ${age3}`)
+// }
+// age.addEventListener("input", age1)
+
+
+/* 3
+Запросите у пользователя длину стороны квадрата и вы-
+ведите периметр такого квадрата. */
+
+// let squ = document.getElementById("squ");
+// let perSqu = document.getElementById("perSqu")
+
+// function square() {
+//   let inpVal = squ.value
+//   let s = inpVal * 4
+//   perSqu.innerText = (`Периметр квадрата ${s}`)
+// }
+// squ.addEventListener("input", square)
+
+
+/* 4
+Запросите у пользователя радиус окружности и выведите
+площадь такой окружности. */
+
+// let circle = document.getElementById("circle");
+// let radius = document.getElementById("radius")
+
+// function s() {
+//   let inpVal = circle.value
+//   let s2 = Math.PI * inpVal
+//   radius.innerText = (`Периметр квадрата ${s2}`)
+// }
+// circle.addEventListener("input", s)
+
+
+/* 5
+Запросите у пользователя расстояние в км между двумя
+городами и за сколько часов он хочет добраться. Посчи-
+тайте скорость, с которой необходимо двигаться, чтобы
+успеть вовремя.
+ */
+
+// let distance = prompt(" введите расстояние до города")
+// let clock=prompt("за сколько часов")
+
+// alert(`вам надо ехать со скоростью ${distance/clock} `)
+
+
+
+/* Запросите у пользователя трехзначное число и выведите
+его задом наперед. Для решения задачи вам понадобится
+оператор % (остаток от деления). */
+
+// let n = prompt("введите число")
+
+// alert(('' + n).split('').reverse().join(''));
