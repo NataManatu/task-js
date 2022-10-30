@@ -40,7 +40,7 @@ const rectangle = {
     getRectHeightPlus: function () {
         return this.getRectHeight() + 100
     },
-    
+
 }
 
 rectangle.getRectPoints()
@@ -112,3 +112,52 @@ console.log('height', heightPlus)
 /* 12 Функция для проверки, находится ли точка внутри пря-
 моугольника. Она принимает объект-прямоугольник и
 координаты точки. */
+
+
+
+
+
+/* Задание 1
+Создать объект, описывающий автомобиль (производитель,
+модель, год выпуска, средняя скорость), и следующие функции
+для работы с этим объектом.
+1
+Функция для вывода на экран информации об автомобиле.
+2
+Функция для подсчета необходимого времени для пре-
+одоления переданного расстояния со средней скоростью.
+Учтите, что через каждые 4 часа дороги водителю необхо-
+димо делать перерыв на 1 час. */
+
+// let honda = {
+//     country: "Japan",
+//     model: "Steem",
+//     year: 2020,
+//     speed: 80
+// }
+// function info() {
+//     console.log(honda)
+//     let distance = prompt("Введите растояние");
+//     let relax = distance / honda.speed
+//     alert(`вам ехать ${relax} часа`)
+//     if (relax <= 4) {
+//         console.log("отдых не требуется")
+//     }
+//     else {
+//         console.log("отдохните")
+//     }
+// }
+// info()
+
+let distance = prompt("Введите расстояние");
+let speed = prompt("Введите среднюю скорость");
+
+let timeInWay = distance / speed;
+
+let timeInRest = (timeInWay % 4 == 0) ? (timeInWay / 4 | 0) - 1 : timeInWay / 4 | 0;
+
+let timeTotal = distance / speed + timeInRest;
+
+alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
+
+
