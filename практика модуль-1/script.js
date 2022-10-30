@@ -635,23 +635,23 @@ write(). Для ввода данных используйте prompt() и confi
 bool (true – четные, false – нечетные). */
 
 
-function isEven(number) {
+// function isEven(number) {
 
-  if (number > 0) {
-    x = true;
-  } else if (number < 0) {
-    x = false;
-  }
-  else {
-    x = false
-  }
-  return x;
+//   if (number > 0) {
+//     x = true;
+//   } else if (number < 0) {
+//     x = false;
+//   }
+//   else {
+//     x = false
+//   }
+//   return x;
 
-}
+// }
 
-console.log(isEven(10));
-console.log(isEven(-4));
-console.log(isEven(2));
+// console.log(isEven(10));
+// console.log(isEven(-4));
+// console.log(isEven(2));
 
 
 
