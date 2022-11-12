@@ -4,8 +4,9 @@
 Создать объект, описывающий прямоугольник (хранит коор-
 динаты левой верхней и правой нижней точек), и написать следу-
 ющие функции для работы с таким объектом.
-1
-Функция принимает объект-прямоугольник и выводит
+
+
+1.Функция принимает объект-прямоугольник и выводит
 информацию о нем (где какая точка расположена). */
 
 const rectangle = {
@@ -82,7 +83,7 @@ console.log('wide', widePlus + 20)
 мает объект-прямоугольник и на сколько единиц изменить
 высоту. */
 let heightPlus = rectangle.getRectHeightPlus()
-console.log('height', heightPlus)
+console.log('height', heightPlus + 10)
 
 
 /* 8
@@ -121,43 +122,110 @@ console.log('height', heightPlus)
 Создать объект, описывающий автомобиль (производитель,
 модель, год выпуска, средняя скорость), и следующие функции
 для работы с этим объектом.
-1
-Функция для вывода на экран информации об автомобиле.
-2
-Функция для подсчета необходимого времени для пре-
+1.Функция для вывода на экран информации об автомобиле.
+2.Функция для подсчета необходимого времени для пре-
 одоления переданного расстояния со средней скоростью.
 Учтите, что через каждые 4 часа дороги водителю необхо-
 димо делать перерыв на 1 час. */
 
-// let honda = {
+// const honda = {
 //     country: "Japan",
-//     model: "Steem",
+//     model: "Stream",
 //     year: 2020,
-//     speed: 80
-// }
-// function info() {
-//     console.log(honda)
-//     let distance = prompt("Введите растояние");
-//     let relax = distance / honda.speed
-//     alert(`вам ехать ${relax} часа`)
-//     if (relax <= 4) {
-//         console.log("отдых не требуется")
+//     speed: 100,
+//     showInfo() {
+//         console.log(`Производитель: ${this.country},\n модель: ${this.model},\n Cредняя скорость: ${this.speed} `)
 //     }
-//     else {
-//         console.log("отдохните")
+// };
+// honda.showInfo()
+
+// // alert("model" in honda)//true
+// // alert("kdfj" in honda)//false
+
+// function displayCar() {
+//     for (key in honda) {
+//         console.log(key);//достаем ключи
+//         console.log(honda[key])//достаем значения из ключей
 //     }
 // }
-// info()
+// displayCar()
 
-let distance = prompt("Введите расстояние");
-let speed = prompt("Введите среднюю скорость");
+// function time() {
+//     let distance = prompt("Введите расстояние");
 
-let timeInWay = distance / speed;
+//     let timeInWay = distance / honda.speed;
 
-let timeInRest = (timeInWay % 4 == 0) ? (timeInWay / 4 | 0) - 1 : timeInWay / 4 | 0;
+//     let timeInRest = (timeInWay % 4 == 0) ? (timeInWay / 4 | 0) - 1 : timeInWay / 4 | 0;
 
-let timeTotal = distance / speed + timeInRest;
+//     let timeTotal = distance / honda.speed + timeInRest;
 
-alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
+//     alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
+
+// }
+// time()
 
 
+/* Задание 2
+Создать объект, хранящий в себе отдельно числитель и зна-
+менатель дроби, и следующие функции для работы с этим объ-
+ектом.
+1.Функция сложения 2-х объектов-дробей.
+2.Функция вычитания 2-х объектов-дробей.
+3.Функция умножения 2-х объектов-дробей.
+4.Функция деления 2-х объектов-дробей.
+5.Функция сокращения объекта-дроби. */
+
+
+const fraction1 = {
+    numerator: 1,
+    denominator: 5,
+    showFraction() { console.log(`${fraction1.numerator}/${fraction1.denominator}`) }
+}
+fraction1.showFraction()
+
+
+
+/* Задание 3
+Создать объект, описывающий время (часы, минуты, секун-
+    ды), и следующие функции для работы с этим объектом.   
+1.Функция вывода времени на экран.
+2.Функция изменения времени на переданное количество
+секунд.
+3.Функция изменения времени на переданное количество
+минут.
+4.Функция изменения времени на переданное количество
+часов.
+Учтите, что в последних 3-х функциях, при изменении одной
+части времени, может измениться и другая. Например: если ко
+времени «20:30:45» добавить 30 секунд, то должно получиться
+«20:31:15», а не «20:30:75».*/
+
+const time = {
+    hour: 22,
+    minute: 22,
+    second: 22
+}
+// console.log(time)
+function showTime() {
+    alert("время" + ":" + time.hour + "часа" + " " + time.minute + "минут" + " " + time.second + "секунд")
+}
+showTime()
+
+changeSeconds(sec) {
+    let hours = sec / 3600;
+    this.h += Math.floor(hours);
+    let minutes = (sec - Math.floor(hours) * 3600) / 60;
+    this.m += Math.floor(minutes);
+    this.s = sec - (Math.floor(hours) * 3600) - (Math.floor(minutes) * 60);
+
+    if (this.s >= 60) {
+        this.s %= 60;
+        this.m += Math.floor(this.s / 60);
+    }
+    if (this.m >= 60) {
+        this.m %= 60;
+        this.h += Math.floor(this.m / 60);
+    }
+
+    return time;
+}
