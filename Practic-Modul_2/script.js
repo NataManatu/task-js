@@ -161,71 +161,84 @@ console.log('height', heightPlus + 10)
 
 //     alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
 
-// }
-// time()
+let distance = prompt("Введите расстояние");
+let speed = prompt("Введите среднюю скорость");
+
+let timeInWay = distance / speed;
+
+let timeInRest = (timeInWay % 4 == 0) ? (timeInWay / 4 | 0) - 1 : timeInWay / 4 | 0;
+
+let timeTotal = distance / speed + timeInRest;
+
+alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
 
 
 /* Задание 2
 Создать объект, хранящий в себе отдельно числитель и зна-
 менатель дроби, и следующие функции для работы с этим объ-
 ектом.
-1.Функция сложения 2-х объектов-дробей.
-2.Функция вычитания 2-х объектов-дробей.
-3.Функция умножения 2-х объектов-дробей.
-4.Функция деления 2-х объектов-дробей.
-5.Функция сокращения объекта-дроби. */
+1
+Функция сложения 2-х объектов-дробей.
+2
+Функция вычитания 2-х объектов-дробей.
+3
+Функция умножения 2-х объектов-дробей.
+4
+Функция деления 2-х объектов-дробей.
+5
+Функция сокращения объекта-дроби */
 
+const obj = {
+    obj1: {
+        upNumb: 10,
+        downNumb: 2
+    },
+    obj2: {
+        upNumb: 30,
+        downNumb: 5
+    },
 
-const fraction1 = {
-    numerator: 1,
-    denominator: 5,
-    showFraction() { console.log(`${fraction1.numerator}/${fraction1.denominator}`) }
+    plus: function () {
+        let dr1 = this.obj1.upNumb / this.obj1.downNumb;
+        let dr2 = this.obj2.upNumb / this.obj2.downNumb;
+        let res = dr1 + dr2
+        console.log(res)
+    },
+
+    minus: function () {
+        let dr1 = this.obj1.upNumb / this.obj1.downNumb;
+        let dr2 = this.obj2.upNumb / this.obj2.downNumb;
+        let res1 = dr1 - dr2
+        console.log(res1)
+    },
+   multi: function () {
+        let dr1 = this.obj1.upNumb / this.obj1.downNumb;
+        let dr2 = this.obj2.upNumb / this.obj2.downNumb;
+        let res2 = dr1 *dr2
+        console.log(res2)
+    }
+
 }
-fraction1.showFraction()
-
-
+obj.plus()
+obj.minus()
+obj.multi()
 
 /* Задание 3
 Создать объект, описывающий время (часы, минуты, секун-
-    ды), и следующие функции для работы с этим объектом.   
-1.Функция вывода времени на экран.
-2.Функция изменения времени на переданное количество
+ды), и следующие функции для работы с этим объектом.
+1
+Функция вывода времени на экран.
+2
+Функция изменения времени на переданное количество
 секунд.
-3.Функция изменения времени на переданное количество
+3
+Функция изменения времени на переданное количество
 минут.
-4.Функция изменения времени на переданное количество
+4
+Функция изменения времени на переданное количество
 часов.
 Учтите, что в последних 3-х функциях, при изменении одной
 части времени, может измениться и другая. Например: если ко
 времени «20:30:45» добавить 30 секунд, то должно получиться
-«20:31:15», а не «20:30:75».*/
+«20:31:15», а не «20:30:75». */
 
-const time = {
-    hour: 22,
-    minute: 22,
-    second: 22
-}
-// console.log(time)
-function showTime() {
-    alert("время" + ":" + time.hour + "часа" + " " + time.minute + "минут" + " " + time.second + "секунд")
-}
-showTime()
-
-changeSeconds(sec) {
-    let hours = sec / 3600;
-    this.h += Math.floor(hours);
-    let minutes = (sec - Math.floor(hours) * 3600) / 60;
-    this.m += Math.floor(minutes);
-    this.s = sec - (Math.floor(hours) * 3600) - (Math.floor(minutes) * 60);
-
-    if (this.s >= 60) {
-        this.s %= 60;
-        this.m += Math.floor(this.s / 60);
-    }
-    if (this.m >= 60) {
-        this.m %= 60;
-        this.h += Math.floor(this.m / 60);
-    }
-
-    return time;
-}
