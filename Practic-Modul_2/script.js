@@ -161,16 +161,16 @@ console.log('height', heightPlus + 10)
 
 //     alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
 
-let distance = prompt("Введите расстояние");
-let speed = prompt("Введите среднюю скорость");
+// let distance = prompt("Введите расстояние");
+// let speed = prompt("Введите среднюю скорость");
 
-let timeInWay = distance / speed;
+// let timeInWay = distance / speed;
 
-let timeInRest = (timeInWay % 4 == 0) ? (timeInWay / 4 | 0) - 1 : timeInWay / 4 | 0;
+// let timeInRest = (timeInWay % 4 == 0) ? (timeInWay / 4 | 0) - 1 : timeInWay / 4 | 0;
 
-let timeTotal = distance / speed + timeInRest;
+// let timeTotal = distance / speed + timeInRest;
 
-alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
+// alert(`Общее время в пути Время в пути = ${timeTotal} часов`);
 
 
 /* Задание 2
@@ -188,40 +188,40 @@ alert(`Общее время в пути Время в пути = ${timeTotal} �
 5
 Функция сокращения объекта-дроби */
 
-const obj = {
-    obj1: {
-        upNumb: 10,
-        downNumb: 2
-    },
-    obj2: {
-        upNumb: 30,
-        downNumb: 5
-    },
+// const obj = {
+//     obj1: {
+//         upNumb: 10,
+//         downNumb: 2
+//     },
+//     obj2: {
+//         upNumb: 30,
+//         downNumb: 5
+//     },
 
-    plus: function () {
-        let dr1 = this.obj1.upNumb / this.obj1.downNumb;
-        let dr2 = this.obj2.upNumb / this.obj2.downNumb;
-        let res = dr1 + dr2
-        console.log(res)
-    },
+//     plus: function () {
+//         let dr1 = this.obj1.upNumb / this.obj1.downNumb;
+//         let dr2 = this.obj2.upNumb / this.obj2.downNumb;
+//         let res = dr1 + dr2
+//         console.log(res)
+//     },
 
-    minus: function () {
-        let dr1 = this.obj1.upNumb / this.obj1.downNumb;
-        let dr2 = this.obj2.upNumb / this.obj2.downNumb;
-        let res1 = dr1 - dr2
-        console.log(res1)
-    },
-   multi: function () {
-        let dr1 = this.obj1.upNumb / this.obj1.downNumb;
-        let dr2 = this.obj2.upNumb / this.obj2.downNumb;
-        let res2 = dr1 *dr2
-        console.log(res2)
-    }
+//     minus: function () {
+//         let dr1 = this.obj1.upNumb / this.obj1.downNumb;
+//         let dr2 = this.obj2.upNumb / this.obj2.downNumb;
+//         let res1 = dr1 - dr2
+//         console.log(res1)
+//     },
+//     multi: function () {
+//         let dr1 = this.obj1.upNumb / this.obj1.downNumb;
+//         let dr2 = this.obj2.upNumb / this.obj2.downNumb;
+//         let res2 = dr1 * dr2
+//         console.log(res2)
+//     }
 
-}
-obj.plus()
-obj.minus()
-obj.multi()
+// }
+// obj.plus()
+// obj.minus()
+// obj.multi()
 
 /* Задание 3
 Создать объект, описывающий время (часы, минуты, секун-
@@ -241,4 +241,72 @@ obj.multi()
 части времени, может измениться и другая. Например: если ко
 времени «20:30:45» добавить 30 секунд, то должно получиться
 «20:31:15», а не «20:30:75». */
+
+// const time = {
+//     h: 2,
+//     m: 23,
+//     s: 40,
+//     showTime() {
+//         document.write(`${this.h}:${this.m}:${this.s}`);
+//     }
+// }
+// time.showTime()
+
+
+/* Задание 1
+Создать массив из 10 случайных чисел и написать несколько
+функций для работы с ним.
+1.Функция принимает массив и выводит его на экран.
+2.Функция принимает массив и выводит только четные
+элементы.
+3.Функция принимает массив и возвращает сумму всех
+элементов массива.
+4.Функция принимает массив и возвращает его максималь-
+ный элемент.
+5.Функция добавления нового элемента в массив по ука-
+занному индексу.
+6.Функция удаления элемента из массива по указанному
+индексу.   
+ */
+
+let arrNumb = [5, 7, 8, 2353, 45, 74, 1, 78, 89, 2]
+
+function showArr() {
+    document.write(arrNumb)
+};
+
+function showArr1() {
+    for (let i = 0; i <= arrNumb.length; i++) {
+        if (arrNumb[i] % 2 == 0) {
+            console.log(arrNumb[i]);
+        }
+    }
+}
+
+function sumArr() {
+    let result = arrNumb.reduce((sum, current) => sum + current, 0);
+    console.log(result);
+}
+
+function maxnumb() {
+    let result = Math.max.apply(null, arrNumb)
+    console.log(result);
+}
+function addNumb() {
+ arrNumb[3]=124
+ console.log(arrNumb)
+}
+function delNumb() {
+    arrNumb.splice(3,1)
+    console.log(arrNumb)
+   }
+
+showArr1();
+showArr();
+sumArr();
+maxnumb();
+addNumb();
+delNumb()
+
+
 
