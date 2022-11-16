@@ -269,44 +269,89 @@ console.log('height', heightPlus + 10)
 индексу.   
  */
 
-let arrNumb = [5, 7, 8, 2353, 45, 74, 1, 78, 89, 2]
+// let arrNumb = [5, 7, 8, 2353, 45, 74, 1, 78, 89, 2]
 
-function showArr() {
-    document.write(arrNumb)
-};
+// function showArr() {
+//     document.write(arrNumb)
+// };
 
-function showArr1() {
-    for (let i = 0; i <= arrNumb.length; i++) {
-        if (arrNumb[i] % 2 == 0) {
-            console.log(arrNumb[i]);
-        }
-    }
+// function showArr1() {
+//     for (let i = 0; i <= arrNumb.length; i++) {
+//         if (arrNumb[i] % 2 == 0) {
+//             console.log(arrNumb[i]);
+//         }
+//     }
+// }
+
+// function sumArr() {
+//     let result = arrNumb.reduce((sum, current) => sum + current, 0);
+//     console.log(result);
+// }
+
+// function maxnumb() {
+//     let result = Math.max.apply(null, arrNumb)
+//     console.log(result);
+// }
+// function addNumb() {
+//     arrNumb[3] = 124
+//     console.log(arrNumb)
+// }
+// function delNumb() {
+//     arrNumb.splice(3, 1)
+//     console.log(arrNumb)
+// }
+
+// showArr1();
+// showArr();
+// sumArr();
+// maxnumb();
+// addNumb();
+// delNumb()
+
+
+/* Задание 2
+Создать еще один массив из 5 случайных чисел и написать
+следующие функции.
+1.Функция принимает 2 массива и возвращает новый мас-
+сив, в котором собраны все элементы из двух массивов
+без повторений.
+2.Функция принимает 2 массива и возвращает новый массив,
+в котором собраны общие элементы (то есть элементы,
+которые встречаются и в первом и во втором массивах)
+без повторений.
+3.Функция принимает 2 массива и возвращает новый мас-
+сив, в котором собраны все элементы из первого массива,
+которых нет во втором массиве. */
+
+let arrNumb = [5, 7, 8, 2353, 45, 74, 1, 78, 89, 2];
+
+let arr2Numb = [5, 78, 45, 234, 90]
+
+function newArr(){
+    let arr3 = arrNumb.concat(arr2Numb);
+    console.log(arr3)
 }
+newArr()
 
-function sumArr() {
-    let result = arrNumb.reduce((sum, current) => sum + current, 0);
-    console.log(result);
+
+function newArr2(){
+    arr4 = arrNumb.filter( el => arr2Numb.indexOf( el ) > -1 );
+    console.log(arr4)
 }
+newArr2()
 
-function maxnumb() {
-    let result = Math.max.apply(null, arrNumb)
-    console.log(result);
-}
-function addNumb() {
- arrNumb[3]=124
- console.log(arrNumb)
-}
-function delNumb() {
-    arrNumb.splice(3,1)
-    console.log(arrNumb)
-   }
 
-showArr1();
-showArr();
-sumArr();
-maxnumb();
-addNumb();
-delNumb()
 
+
+
+
+/* Задание 3
+Создать массив фруктов и отсортировать его по алфавиту.
+Написать следующие функции.
+1.Вывод на экран с помощью document.write() в виде списка
+(с помощью тегов ul и li).
+2.Поиск фрукта в массиве. Функция принимает название
+фрукта и возвращает индекс найденного элемента или -1,
+если не найден. Поиск должен быть нерегистрозависимым. */
 
 
