@@ -66,3 +66,15 @@ getFamilyMember(111)
     .catch(err => {
         console.log(err)
     })
+
+
+//4
+
+const beersPromise = fetch('https://api.sampleapis.com/beers/ale')
+const winesPromise = fetch('https://api.sampleapis.com/wines/reds')
+
+Promise.all([beersPromise, winesPromise])
+    .then(data => Promise.all(data.map(res => res.json())))
+    .then(finalData => {
+        console.log(finalData)
+    })
