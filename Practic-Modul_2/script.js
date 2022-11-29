@@ -363,10 +363,61 @@ function myFruit() {
 myFruit()
 
 
-function myFruitName(name){
+function myFruitName(name) {
     document.write(fruit.indexOf(name))
 }
 myFruitName("pear")
 
 
+/* Задание 1
+Создать массив «Список покупок». Каждый элемент массива
+является объектом, который содержит название продукта, необ-
+ходимое количество и куплен или нет. Написать несколько функ-
+ций для работы с таким массивом.
+1
+Вывод всего списка на экран таким образом, чтобы сначала
+шли некупленные продукты, а потом – купленные.
+2
+Добавление покупки в список. Учтите, что при добавлении
+покупки с уже существующим в списке продуктом, необ-
+ходимо увеличивать количество в существующей покупке,
+а не добавлять новую.
+3
+Покупка продукта. Функция принимает название продукта
+и отмечает его как купленный. */
 
+
+const shoppingList = [{
+    name: 'book',
+    count: 42,
+    res: true
+},
+{
+    name: 'fruit',
+    count: 30,
+    res: false
+},
+{
+    name: 'dog',
+    count: 1,
+    res: true
+},
+{
+    name: 'milk',
+    count: 10,
+    res: false
+}];
+
+
+
+shoppingList.sort((a, b) => {
+
+    if (a.res === true && b.res === false) {
+        return 1;
+    }
+    if (a.res === false && b.res === true) {
+        return -1;
+    }
+    return 0;
+})
+console.log(shoppingList); 
