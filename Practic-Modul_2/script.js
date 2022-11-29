@@ -327,21 +327,18 @@ let arrNumb = [5, 7, 8, 2353, 45, 74, 1, 78, 89, 2];
 
 let arr2Numb = [5, 78, 45, 234, 90]
 
-function newArr(){
+function newArr() {
     let arr3 = arrNumb.concat(arr2Numb);
     console.log(arr3)
 }
 newArr()
 
 
-function newArr2(){
-    arr4 = arrNumb.filter( el => arr2Numb.indexOf( el ) > -1 );
+function newArr2() {
+    arr4 = arrNumb.filter(el => arr2Numb.indexOf(el) > -1);
     console.log(arr4)
 }
 newArr2()
-
-
-
 
 
 
@@ -353,5 +350,23 @@ newArr2()
 2.Поиск фрукта в массиве. Функция принимает название
 фрукта и возвращает индекс найденного элемента или -1,
 если не найден. Поиск должен быть нерегистрозависимым. */
+
+let fruit = ["avocado", "pear", "persimmon", "fig", "date", "tangerine", "melon", "quince"];
+
+function myFruit() {
+    let arrFruit = fruit.sort();
+
+    for (let i = 0; i < fruit.length; i++) {
+        document.write(`<ul><li> ${arrFruit[i]} </li></ul>`)
+    }
+}
+myFruit()
+
+
+function myFruitName(name){
+    document.write(fruit.indexOf(name))
+}
+myFruitName("pear")
+
 
 
