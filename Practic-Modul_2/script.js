@@ -390,45 +390,45 @@ newArr2()
 const shoppingList = [{
     name: 'book',
     count: 42,
-    res: "куплен"
+    res: true
 },
 {
     name: 'fruit',
     count: 30,
-    res: "не куплен"
+    res: false
 },
 {
     name: 'dog',
     count: 1,
-    res: "куплен"
+    res: true
 },
 {
     name: 'milk',
     count: 10,
-    res: "не куплен"
+    res: false
 }];
 
 function Sort(shoppingList) {
     shoppingList.sort((a, b) => {
-    
-        if (a.res === "куплен" && b.res === "не куплен") {
+
+        if (a.res === true && b.res === false) {
             return 1;
         }
-        if (a.res === "не куплен" && b.res === "куплен") {
+        if (a.res === false && b.res === true) {
             return -1;
         }
         return 0;
     })
-    
+
     for (let i = 0; i < shoppingList.length; i++) {
         document.write(`<ul><li>${shoppingList[i].name}  ${shoppingList[i].count} ${shoppingList[i].res}</li></ul>`);
     }
-    
+
 }
 
 Sort(shoppingList)
 
-function addShopList(name,count,res){
+function addShopList(name, count, res) {
 
 
 }
