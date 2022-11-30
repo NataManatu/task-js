@@ -351,22 +351,22 @@ newArr2()
 фрукта и возвращает индекс найденного элемента или -1,
 если не найден. Поиск должен быть нерегистрозависимым. */
 
-let fruit = ["avocado", "pear", "persimmon", "fig", "date", "tangerine", "melon", "quince"];
+// let fruit = ["avocado", "pear", "persimmon", "fig", "date", "tangerine", "melon", "quince"];
 
-function myFruit() {
-    let arrFruit = fruit.sort();
+// function myFruit() {
+//     let arrFruit = fruit.sort();
 
-    for (let i = 0; i < fruit.length; i++) {
-        document.write(`<ul><li> ${arrFruit[i]} </li></ul>`)
-    }
-}
-myFruit()
+//     for (let i = 0; i < fruit.length; i++) {
+//         document.write(`<ul><li> ${arrFruit[i]} </li></ul>`)
+//     }
+// }
+// myFruit()
 
 
-function myFruitName(name) {
-    document.write(fruit.indexOf(name))
-}
-myFruitName("pear")
+// function myFruitName(name) {
+//     document.write(fruit.indexOf(name))
+// }
+// myFruitName("pear")
 
 
 /* Задание 1
@@ -390,37 +390,57 @@ myFruitName("pear")
 const shoppingList = [{
     name: 'book',
     count: 42,
-    res: true
+    res: "куплен"
 },
 {
     name: 'fruit',
     count: 30,
-    res: false
+    res: "не куплен"
 },
 {
     name: 'dog',
     count: 1,
-    res: true
+    res: "куплен"
 },
 {
     name: 'milk',
     count: 10,
-    res: false
+    res: "не куплен"
 }];
 
-
-
-shoppingList.sort((a, b) => {
-
-    if (a.res === true && b.res === false) {
-        return 1;
+function Sort(shoppingList) {
+    shoppingList.sort((a, b) => {
+    
+        if (a.res === "куплен" && b.res === "не куплен") {
+            return 1;
+        }
+        if (a.res === "не куплен" && b.res === "куплен") {
+            return -1;
+        }
+        return 0;
+    })
+    
+    for (let i = 0; i < shoppingList.length; i++) {
+        document.write(`<ul><li>${shoppingList[i].name}  ${shoppingList[i].count} ${shoppingList[i].res}</li></ul>`);
     }
-    if (a.res === false && b.res === true) {
-        return -1;
-    }
-    return 0;
-})
-console.log(shoppingList); 
+    
+}
+
+Sort(shoppingList)
+
+function addShopList(name,count,res){
+
+
+}
+
+
+
+
+
+
+
+
+
 
 
 /* Задание 2
